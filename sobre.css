@@ -8,7 +8,7 @@
 
 body {
   margin: 0;
-  background-image: url('fotos/floresap.jpg.png');
+  background-image: url('./fotos/floresap.jpg.png');
   color: #51BB83;
   font-family: calibri, concourse, fort;
   padding: 0;
@@ -102,7 +102,7 @@ header:hover {
 #apresentacao {
   height: 1000px;
   width: 100%;
-  background-image: url('fotos2/fundo1.jpg');
+  background-image: url('./fotos2/fundo1.jpg');
   background-repeat: cover;
   margin: 0;
 }
