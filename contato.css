@@ -1,0 +1,182 @@
+  html {
+  height: 100%;
+  width: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-image: url('fotos/floresap.jpg.png');
+  color: #51BB83;
+  font-family: calibri, concourse, fort;
+  padding: 0;
+  width: 100%;
+}
+
+h1 {
+  margin: 0;
+}
+header {
+  z-index: 1000;
+  margin: 0;
+  height: 90px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 5px 5px 5px 5px;
+  background-color: #150a12;
+  opacity: .75;
+  transition: opacity .5s;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+header:hover {
+  opacity: 1;
+}
+#titulo {
+  position: absolute;
+  top: 30px;
+  font-size: 1rem;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+}
+#logo {
+  height: 80px;
+  width: 80px;
+  position: absolute;
+  left: 0;
+}
+.menu {
+  position: relative;
+  display: inline-block;
+}
+.icon {
+  height: 80px;
+  width: 80px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #150a12;
+  border: none;
+}
+.opcoes {
+  font-size: 1.5rem;
+  display: none;
+  justify-content: left;
+  position: absolute;
+  right: 0;
+  top: 75px;
+  background-color: #150a12;
+  height: 150px;
+  width: 185px;
+  border-radius: 5px;
+}
+.opcoes a {
+  padding: 10px;
+  color: #519872;
+  text-decoration: none;
+  transition: background-color .5s;
+  border-radius: 5%;
+  display: block;
+}
+.opcoes a:hover {
+  background-color: #34252F;
+  color: #BEC5AD;
+}
+.icon:hover + .opcoes {
+  display: grid;
+  opacity: 1;
+  transition: display .3s;
+}
+.icon:hover .opcoes {
+  display: block;
+}
+
+/*^^^^^^^ so o menu mds ^^^^^*/
+
+#apresentacao {
+  height: 1000px;
+  width: 100%;
+  background-image: url('fotos2/info.jpg');
+  background-repeat: cover;
+  margin: 0;
+}
+
+#info {
+  background-image: url('fotos2/contato.jpg');
+}
+
+.bloco2 {
+  margin: 0;
+  background-color: rgba(188, 149, 199, .5);
+  height: 600px;
+  width: 100%;
+}
+
+.bloco1 {
+  background-color: rgba(81, 187, 131, .5);
+  height: 1300px;
+  width: 100%;
+}
+
+.bloco1 h1 {
+  margin: auto;
+  text-align: center;
+  font-weight: bold;
+  height: 75px;
+  width: 1000px;
+  font-size: 30px;
+  color: #51BB83;
+  padding: 15px;
+  background-color: #126847;
+  border-radius: 20px;
+  position: relative;
+  top: 150px;
+  box-shadow: 0 5px 5px rgba(0,0,0,.5);
+}
+
+.bloco1 p {
+  position: relative;
+  top: 200px;
+  width: 570px;
+  text-align: justify;
+  padding: 30px;
+  /*text-indent: 50px;*/
+  margin: auto;
+  letter-spacing: 2px;
+  font-size: 30px;
+  color: #34252F;
+}
+
+.bloco2 h1 {
+  margin: auto;
+  text-align: center;
+  font-weight: bold;
+  height: 75px;
+  width: 1000px;
+  font-size: 30px;
+  color: #BC95C7;
+  padding: 15px;
+  background-color: #603696;
+  border-radius: 20px;
+  position: relative;
+  top: 100px;
+  box-shadow: 0 5px 5px rgba(0,0,0,.5);
+}
+
+.bloco2 p {
+  position: relative;
+  top: 200px;
+  width: 900px;
+  text-align: justify;
+  padding: 30px;
+  /*text-indent: 50px;*/
+  margin: auto;
+  letter-spacing: 2px;
+  font-size: 50px;
+  color: #351362;
+}

@@ -1,0 +1,190 @@
+  html {
+  height: 100%;
+  width: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-image: url('fotos/floresap.jpg.png');
+  color: #51BB83;
+  font-family: calibri, concourse, fort;
+  padding: 0;
+  width: 100%;
+}
+
+h1 {
+  margin: 0;
+}
+header {
+  z-index: 1000;
+  margin: 0;
+  height: 90px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 5px 5px 5px 5px;
+  background-color: #150a12;
+  opacity: .75;
+  transition: opacity .5s;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+header:hover {
+  opacity: 1;
+}
+
+#titulo {
+  position: absolute;
+  top: 30px;
+  font-size: 1rem;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+}
+#logo {
+  height: 80px;
+  width: 80px;
+  position: absolute;
+  left: 0;
+}
+.menu {
+  position: relative;
+  display: inline-block;
+}
+.icon {
+  height: 80px;
+  width: 80px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #150a12;
+  border: none;
+}
+.opcoes {
+  font-size: 1.5rem;
+  display: none;
+  justify-content: left;
+  position: absolute;
+  right: 0;
+  top: 75px;
+  background-color: #150a12;
+  height: 150px;
+  width: 185px;
+  border-radius: 5px;
+}
+.opcoes a {
+  padding: 10px;
+  color: #519872;
+  text-decoration: none;
+  transition: background-color .5s;
+  border-radius: 5%;
+  display: block;
+}
+.opcoes a:hover {
+  background-color: #34252F;
+  color: #BEC5AD;
+}
+.icon:hover + .opcoes {
+  display: grid;
+  opacity: 1;
+  transition: display .3s;
+}
+.icon:hover .opcoes {
+  display: block;
+}
+
+/*^^^^^^^ so o menu mds ^^^^^*/
+
+#apresentacao {
+  height: 1000px;
+  width: 100%;
+  background-image: url('fotos2/fundo1.jpg');
+  background-repeat: cover;
+  margin: 0;
+}
+
+.bloco {
+  background-color: rgba(188, 149, 199,.75);
+  height: 1000px;
+  width: 100%;
+}
+
+.bloco h1 {
+  text-align: center;
+  font-weight: bold;
+  height: 100px;
+  width: 500px;
+  background-color: #603696;
+  color: #BC95C7;
+  margin: auto;
+  padding-top: 30px;
+  position: relative;
+  top: 150px;
+  border-radius: 25px;
+  box-shadow: 0 5px 5px rgba(0,0,0,.5);
+}
+
+.bloco span {
+  font-weight: bold;
+  font-size: 40px;
+  color: #351362;
+}
+
+.bloco p {
+  position: relative;
+  top: 225px;
+  width: 570px;
+  text-align: justify;
+  padding: 30px;
+  /*text-indent: 50px;*/
+  margin: auto;
+  letter-spacing: 2px;
+  font-size: 30px;
+  color: #603696;
+}
+
+/*apresentacao ^^^*/
+
+#produtos {
+  text-align: center;
+  padding: 65px 30px 30px 30px;
+  height: 400px;
+  width: 100%;
+  background-color: #351362;
+  color: #BC95C7;
+}
+
+#produtos h1 {
+  font-size: 40px;
+  color: #a469b5;
+}
+
+#produtos p{
+  font-size: 30px;
+}
+
+#produtos span {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+#produtos a {
+  text-decoration: none;
+  color: #E3F1C2;
+  font-size: 20px;
+  position: relative;
+  top: 30px;
+  background-color: #51BB83;
+  padding: 30px 30px 30px 30px;
+  border-radius: 20px;
+  box-shadow: 0 5px 5px rgba(0,0,0,.5);
+}
+
+#produtos a:hover {
+  background-color: #21a65f;
+  transition: background-color .25s;
+}
